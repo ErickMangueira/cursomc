@@ -9,7 +9,7 @@ public class ProdutoDTO  implements Serializable {
 	
 	private Integer id;
 	private String nome;
-	private Double price;
+	private Double preco;
 	
 	public ProdutoDTO() {
 		
@@ -18,7 +18,7 @@ public class ProdutoDTO  implements Serializable {
 	public ProdutoDTO( Produto obj) {
 		id = obj.getId();
 		nome = obj.getNome();
-		price = obj.getPrice();
+		preco = obj.getPreco();
 	}
 
 	public Integer getId() {
@@ -37,12 +37,12 @@ public class ProdutoDTO  implements Serializable {
 		this.nome = nome;
 	}
 
-	public Double getPrice() {
-		return price;
+	public Double getPreco() {
+		return preco;
 	}
 
-	public void setPrice(Double price) {
-		this.price = price;
+	public void setPreco(Double preco) {
+		this.preco = preco;
 	}
     
 
